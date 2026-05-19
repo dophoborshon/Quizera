@@ -1,0 +1,228 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.qzhst-container {
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 0 24px;
+}
+
+.qzhst-header {
+  margin-bottom: 35px;
+}
+
+.qzhst-header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.qzhst-header p {
+  color: #625985;
+  font-size: 15px;
+}
+
+.qzhst-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 30px;
+}
+
+@media (max-width: 950px) {
+  .qzhst-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.qzhst-left-feed-column {
+  width: 100%;
+}
+
+.qzhst-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.qzhst-row-card {
+  background-color: #100b21;
+  border: 1px solid #1a1430;
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.qzhst-card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.qzhst-category-tag {
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #1a1430;
+  border: 1px solid #251d3e;
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: #00f2fe;
+  white-space: nowrap;
+}
+
+.qzhst-quiz-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.qzhst-card-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.qzhst-meta-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.qzhst-date-text {
+  font-size: 13px;
+  color: #51496e;
+  white-space: nowrap;
+}
+
+.qzhst-score-badge {
+  font-size: 13px;
+  color: #8c85a3;
+  background-color: #1a1430;
+  padding: 4px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.qzhst-score-badge strong {
+  color: #00f2fe;
+}
+
+.qzhst-view-btn {
+  background-color: #1a1430;
+  border: 1px solid #251d3e;
+  color: #00f2fe;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.qzhst-view-btn:hover {
+  background-color: #00f2fe;
+  color: #0b0816;
+  border-color: #00f2fe;
+}
+
+.qzhst-empty {
+  text-align: center;
+  padding: 40px;
+  background-color: #100b21;
+  border: 1px dashed #1a1430;
+  border-radius: 10px;
+  color: #625985;
+}
+
+.qzhst-empty a { color: #00f2fe; text-decoration: none; }
+
+.qzhst-right-sidebar-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.qzhst-stats-panel-card {
+  background-color: #100b21;
+  border: 1px solid #1a1430;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.qzhst-stats-panel-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #51496e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.qzhst-progress-metric-item {
+  margin-bottom: 14px;
+}
+
+.qzhst-progress-metric-item:last-child {
+  margin-bottom: 0;
+}
+
+.qzhst-metric-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.qzhst-metric-meta span { color: #8c85a3; }
+.qzhst-metric-meta strong { color: #ffffff; }
+
+.qzhst-progress-bar-track {
+  width: 100%;
+  height: 5px;
+  background-color: #1a1430;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.qzhst-progress-bar-fill {
+  height: 100%;
+}
+
+.qzhst-badge-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.qzhst-badge-row-item {
+  background-color: #1a1430;
+  border: 1px solid #251d3e;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+-webkit-text-fill-color: #FFFFFF !important;
+-webkit-box-shadow: 0 0 0px 1000px #110c1f inset !important;
+transition: background-color 5000s ease-in-out 0s;
+}
