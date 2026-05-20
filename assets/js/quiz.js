@@ -205,8 +205,8 @@ function openReviewModal(historyId) {
         };
 
         const getOptBadge = (optLetter) => {
-          if (item.correct_option === optLetter) return '<span class="qzhst-option-badge">✔ Correct</span>';
-          if (item.selected_option === optLetter) return '<span class="qzhst-option-badge">❌ Your Choice</span>';
+          if (item.correct_option === optLetter) return '<span class="qzhst-option-badge"> Correct</span>';
+          if (item.selected_option === optLetter) return '<span class="qzhst-option-badge">Your Choice</span>';
           return '';
         };
 

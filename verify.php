@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
     if (isset($_SESSION['reset_code']) && $code == $_SESSION['reset_code']) {
         unset($_SESSION['reset_code']);
-        // Flag the session showing that the verification checkpoint passed
+
         $_SESSION['allow_password_update'] = true; 
         echo json_encode(['success' => true, 'redirect' => 'new-password.php', 'message' => 'Identity verified!']);
         exit;
@@ -36,8 +36,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     exit;
 }
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">

@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             $mail->Subject = 'Reset Your Quizera Password';
             $mail->Body    = "
               <div style='background-color:#110c1f; color:white; padding:40px; text-align:center; font-family:sans-serif;'>
-                <h1 style='color:#00F2FE; font-size:28px;'>✦ Password Reset Request</h1>
+                <h1 style='color:#00F2FE; font-size:28px;'> Password Reset Request</h1>
                 <p style='font-size:16px;'>Hello, " . htmlspecialchars($user['name']) . ".</p>
                 <p style='font-size:14px; color:#a099b8;'>Use the verification code below to authorize your password update:</p>
                 <div style='font-size:36px; font-weight:bold; color:#00F2FE; letter-spacing:8px; margin:30px 0; background:#18122B; padding:15px; border-radius:8px; display:inline-block;'>$resetCode</div>
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
             $mail->send();
         } catch (Exception $e) {
-            // Live error debugger popup helper
+
             echo json_encode(['success' => false, 'message' => 'Mailer processing failed: ' . $mail->ErrorInfo]);
             $stmt->close();
             $conn->close();

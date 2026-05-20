@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 </head>
 <body class="login-page">
   <div class="login-card">
-    <div class="login-icon">✦</div>
+    <div class="login-icon"></div>
     <h1 class="login-h1">Welcome to Quizera</h1>
     <p class="login-p">Login to participate in quizzes</p>
     <input class="login-email"    type="email"    id="email"    placeholder="Email Address" />

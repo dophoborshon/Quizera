@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'signu
     $mail->Subject = 'Your Quizera Verification Code';
     $mail->Body    = "
       <div style='background-color:#110c1f; color:white; padding:40px; text-align:center; font-family:sans-serif;'>
-        <h1 style='color:#00F2FE; font-size:28px;'>✦ Quizera Access Token</h1>
+        <h1 style='color:#00F2FE; font-size:28px;'> Quizera Access Token</h1>
         <p style='font-size:16px;'>Welcome to the ultimate quiz destination, " . htmlspecialchars($name) . "!</p>
         <p style='font-size:14px; color:#a099b8;'>Your identity verification code is:</p>
         <div style='font-size:36px; font-weight:bold; color:#00F2FE; letter-spacing:8px; margin:30px 0; background:#18122B; padding:15px; border-radius:8px; display:inline-block;'>$verificationCode</div>
@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'signu
 </head>
 <body class="login-page">
   <div class="login-card" style="width: 380px;">
-    <div class="login-icon">✦</div>
+    <div class="login-icon"></div>
     <h1 class="login-h1">Create Account</h1>
     <p class="login-p">Join Quizera to track your trivia scores</p>
     <input class="login-email" type="text"   id="name"     placeholder="Full Name" />
