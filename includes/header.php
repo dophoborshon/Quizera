@@ -121,6 +121,20 @@ $avatar_initial = strtoupper(mb_substr($words[0] ?? 'G', 0, 1) . mb_substr($word
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    .qznav-fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      width: 100%;
+      backdrop-filter: blur(12px);
+    }
+
+    .global-page-container {
+      padding-top: 110px;
+    }
   </style>
 </head>
 <body class="qzglb-app-body" style="background-color: #110c1f; font-family: 'Inter', sans-serif; color: #ffffff; margin: 0; padding: 0;">
@@ -138,7 +152,7 @@ $avatar_initial = strtoupper(mb_substr($words[0] ?? 'G', 0, 1) . mb_substr($word
          style="text-decoration: none; font-size: 14px; font-weight: 500; color: <?php echo ($current_page == 'browse.php') ? '#00F2FE' : '#8c85a3'; ?>;" 
          class="<?php echo ($current_page == 'browse.php') ? 'active' : ''; ?>">Quizzes</a>
       
-      <a href="/online-quiz/ranks.php" 
+      <a href="/online-quiz/users/ranks.php" 
          style="text-decoration: none; font-size: 14px; font-weight: 500; color: <?php echo ($current_page == 'ranks.php') ? '#00F2FE' : '#8c85a3'; ?>;" 
          class="<?php echo ($current_page == 'ranks.php') ? 'active' : ''; ?>">Ranks</a>
       
